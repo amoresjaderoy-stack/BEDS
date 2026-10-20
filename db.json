@@ -1,0 +1,403 @@
+{
+    "roles": [
+        {
+            "role_id": 1,
+            "role_name": "Dispatcher"
+        },
+        {
+            "role_id": 2,
+            "role_name": "Responder"
+        },
+        {
+            "role_id": 3,
+            "role_name": "Barangay Official"
+        }
+    ],
+    "users": [
+        {
+            "user_id": 1,
+            "role_id": 1,
+            "full_name": "Roberto Dela Cruz",
+            "username": "rdelacruz",
+            "password": "1234",
+            "contact_no": "0917-123-4501",
+            "email": "r.delacruz@brgylibertad.gov.ph",
+            "date_created": "2024-01-10"
+        },
+        {
+            "user_id": 2,
+            "role_id": 2,
+            "full_name": "Jenny Santos",
+            "username": "jsantos",
+            "password": "1234",
+            "contact_no": "0917-223-9981",
+            "email": "j.santos@brgylibertad.gov.ph",
+            "date_created": "2024-02-02"
+        },
+        {
+            "user_id": 3,
+            "role_id": 3,
+            "full_name": "Kagawad Mario Reyes",
+            "username": "admin",
+            "password": "1234",
+            "contact_no": "0917-777-2200",
+            "email": "m.reyes@brgylibertad.gov.ph",
+            "date_created": "2023-11-15"
+        },
+        {
+            "user_id": 4,
+            "role_id": 2,
+            "full_name": "Allan Bermejo",
+            "username": "abermejo",
+            "password": "1234",
+            "contact_no": "0918-445-2210",
+            "email": "a.bermejo@brgylibertad.gov.ph",
+            "date_created": "2024-03-19"
+        }
+    ],
+    "locations": [
+        {
+            "location_id": 1,
+            "address": "Purok 3, Sitio Maligaya",
+            "zone_number": "Zone 2",
+            "landmark": "Near Libertad Elementary School",
+            "barangay": "Libertad"
+        },
+        {
+            "location_id": 2,
+            "address": "Purok 7, National Highway",
+            "zone_number": "Zone 4",
+            "landmark": "Beside Gasoline Station",
+            "barangay": "Libertad"
+        },
+        {
+            "location_id": 3,
+            "address": "Purok 1, Riverside",
+            "zone_number": "Zone 1",
+            "landmark": "Near Wooden Bridge",
+            "barangay": "Libertad"
+        },
+        {
+            "location_id": 4,
+            "address": "Purok 5, Upper Libertad",
+            "zone_number": "Zone 3",
+            "landmark": "Behind Barangay Chapel",
+            "barangay": "Libertad"
+        }
+    ],
+    "responders": [
+        {
+            "responder_id": 1,
+            "user_id": 2,
+            "full_name": "Jenny Santos",
+            "contact_no": "0917-223-9981",
+            "specialization": "First Aid \/ EMT",
+            "availability_status": "Available"
+        },
+        {
+            "responder_id": 2,
+            "user_id": 4,
+            "full_name": "Allan Bermejo",
+            "contact_no": "0918-445-2210",
+            "specialization": "Fire & Rescue",
+            "availability_status": "On Duty"
+        },
+        {
+            "responder_id": 3,
+            "user_id": null,
+            "full_name": "Carlo Miñoza",
+            "contact_no": "0919-556-0032",
+            "specialization": "Traffic \/ Road Accident",
+            "availability_status": "Available"
+        },
+        {
+            "responder_id": 4,
+            "user_id": null,
+            "full_name": "Divine Ochoa",
+            "contact_no": "0920-334-8871",
+            "specialization": "First Aid \/ EMT",
+            "availability_status": "Off Duty"
+        }
+    ],
+    "resources": [
+        {
+            "resource_id": 1,
+            "resource_name": "Ambulance Unit 1",
+            "resource_type": "Vehicle",
+            "status": "Available"
+        },
+        {
+            "resource_id": 2,
+            "resource_name": "Rescue Motorcycle",
+            "resource_type": "Vehicle",
+            "status": "In Use"
+        },
+        {
+            "resource_id": 3,
+            "resource_name": "First Aid Kit A",
+            "resource_type": "Medical Supply",
+            "status": "Available"
+        },
+        {
+            "resource_id": 4,
+            "resource_name": "Portable Radio Set",
+            "resource_type": "Communication",
+            "status": "Available"
+        },
+        {
+            "resource_id": 5,
+            "resource_name": "Fire Extinguisher Set",
+            "resource_type": "Rescue Gear",
+            "status": "Maintenance"
+        }
+    ],
+    "incidents": [
+        {
+            "incident_id": 1,
+            "reporter_name": "Maria Cortez",
+            "reporter_contact": "0917-000-1122",
+            "incident_type": "Medical Emergency",
+            "description": "Elderly resident collapsed, difficulty breathing.",
+            "location_id": 1,
+            "reported_by": 1,
+            "status": "On-site",
+            "date_reported": "2026-10-01 05:18",
+            "date_resolved": null
+        },
+        {
+            "incident_id": 2,
+            "reporter_name": "Pedro Lim",
+            "reporter_contact": "0918-222-3344",
+            "incident_type": "Road Accident",
+            "description": "Motorcycle collision along the highway, one injured.",
+            "location_id": 2,
+            "reported_by": 1,
+            "status": "Dispatched",
+            "date_reported": "2026-10-01 10:18",
+            "date_resolved": null
+        },
+        {
+            "incident_id": 3,
+            "reporter_name": "Ana Reyes",
+            "reporter_contact": "0919-444-5566",
+            "incident_type": "Fire",
+            "description": "Small kitchen fire, contained but smoke reported.",
+            "location_id": 4,
+            "reported_by": 1,
+            "status": "Verified",
+            "date_reported": "2026-10-01 11:58",
+            "date_resolved": null
+        },
+        {
+            "incident_id": 4,
+            "reporter_name": "Junjun Tan",
+            "reporter_contact": "0920-555-1290",
+            "incident_type": "Typhoon \/ Flooding",
+            "description": "Rising floodwater near riverside houses.",
+            "location_id": 3,
+            "reported_by": 3,
+            "status": "Reported",
+            "date_reported": "2026-10-01 12:38",
+            "date_resolved": null
+        },
+        {
+            "incident_id": 5,
+            "reporter_name": "Grace Nuñez",
+            "reporter_contact": "0921-888-0021",
+            "incident_type": "Domestic Dispute",
+            "description": "Loud altercation reported by neighbors, resolved peacefully.",
+            "location_id": 1,
+            "reported_by": 1,
+            "status": "Resolved",
+            "date_reported": "2026-09-29 13:18",
+            "date_resolved": "2026-09-29 12:18"
+        },
+        {
+            "incident_id": 6,
+            "reporter_name": "Fernando Cruz",
+            "reporter_contact": "0917-321-7788",
+            "incident_type": "Medical Emergency",
+            "description": "Resident with high fever requesting transport to health center.",
+            "location_id": 2,
+            "reported_by": 1,
+            "status": "Resolved",
+            "date_reported": "2026-09-27 13:18",
+            "date_resolved": "2026-09-27 12:18"
+        },
+        {
+            "incident_id": 7,
+            "reporter_name": "Jade",
+            "reporter_contact": "312234",
+            "incident_type": "Medical Emergency",
+            "description": "PAGDALI",
+            "location_id": 1,
+            "reported_by": 2,
+            "status": "Reported",
+            "date_reported": "2026-10-01 13:21",
+            "date_resolved": null
+        }
+    ],
+    "dispatch_assignment": [
+        {
+            "assignment_id": 1,
+            "incident_id": 1,
+            "responder_id": 1,
+            "resource_id": 1,
+            "dispatch_time": "2026-10-01 05:18",
+            "arrival_time": "2026-10-01 05:38"
+        },
+        {
+            "assignment_id": 2,
+            "incident_id": 2,
+            "responder_id": 3,
+            "resource_id": 2,
+            "dispatch_time": "2026-10-01 10:18",
+            "arrival_time": null
+        },
+        {
+            "assignment_id": 3,
+            "incident_id": 5,
+            "responder_id": 2,
+            "resource_id": 4,
+            "dispatch_time": "2026-09-29 13:18",
+            "arrival_time": "2026-09-29 13:18"
+        },
+        {
+            "assignment_id": 4,
+            "incident_id": 6,
+            "responder_id": 1,
+            "resource_id": 3,
+            "dispatch_time": "2026-09-27 13:18",
+            "arrival_time": "2026-09-27 13:18"
+        }
+    ],
+    "incident_status_log": [
+        {
+            "log_id": 1,
+            "incident_id": 1,
+            "status": "Reported",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 05:08"
+        },
+        {
+            "log_id": 2,
+            "incident_id": 1,
+            "status": "Verified",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 05:13"
+        },
+        {
+            "log_id": 3,
+            "incident_id": 1,
+            "status": "Dispatched",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 05:18"
+        },
+        {
+            "log_id": 4,
+            "incident_id": 1,
+            "status": "On-site",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 05:38"
+        },
+        {
+            "log_id": 5,
+            "incident_id": 2,
+            "status": "Reported",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 10:03"
+        },
+        {
+            "log_id": 6,
+            "incident_id": 2,
+            "status": "Verified",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 10:08"
+        },
+        {
+            "log_id": 7,
+            "incident_id": 2,
+            "status": "Dispatched",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 10:18"
+        },
+        {
+            "log_id": 8,
+            "incident_id": 3,
+            "status": "Reported",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 11:53"
+        },
+        {
+            "log_id": 9,
+            "incident_id": 3,
+            "status": "Verified",
+            "updated_by": 1,
+            "timestamp": "2026-10-01 11:58"
+        },
+        {
+            "log_id": 10,
+            "incident_id": 4,
+            "status": "Reported",
+            "updated_by": 3,
+            "timestamp": "2026-10-01 12:38"
+        },
+        {
+            "log_id": 11,
+            "incident_id": 5,
+            "status": "Reported",
+            "updated_by": 1,
+            "timestamp": "2026-09-29 12:48"
+        },
+        {
+            "log_id": 12,
+            "incident_id": 5,
+            "status": "Resolved",
+            "updated_by": 1,
+            "timestamp": "2026-09-29 12:18"
+        },
+        {
+            "log_id": 13,
+            "incident_id": 6,
+            "status": "Reported",
+            "updated_by": 1,
+            "timestamp": "2026-09-27 12:58"
+        },
+        {
+            "log_id": 14,
+            "incident_id": 6,
+            "status": "Resolved",
+            "updated_by": 1,
+            "timestamp": "2026-09-27 12:18"
+        },
+        {
+            "log_id": 15,
+            "incident_id": 7,
+            "status": "Reported",
+            "updated_by": 2,
+            "timestamp": "2026-10-01 13:21"
+        }
+    ],
+    "reports": [
+        {
+            "report_id": 1,
+            "generated_by": 3,
+            "report_type": "Monthly Summary",
+            "date_range_start": "2026-09-01",
+            "date_range_end": "2026-09-30",
+            "total_incidents": 24,
+            "avg_response_time": "14 mins",
+            "date_generated": "2026-09-05 13:18"
+        }
+    ],
+    "_seq": {
+        "incident_id": 8,
+        "location_id": 5,
+        "responder_id": 5,
+        "resource_id": 6,
+        "assignment_id": 5,
+        "log_id": 16,
+        "report_id": 2,
+        "user_id": 5
+    }
+}
