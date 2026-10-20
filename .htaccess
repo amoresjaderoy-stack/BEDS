@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^(config\.php|config\.example\.php)$">
+  Require all denied
+</FilesMatch>
+
+# Block direct access to SQL dumps and JSON store
+<FilesMatch "\.(sql|json)$">
+  Require all denied
+</FilesMatch>
